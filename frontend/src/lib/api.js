@@ -1,9 +1,8 @@
 const BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1";
-
+  import.meta.env.VITE_API_URL || "http://localhost:8000";
 /* ================= CORE FETCH WRAPPER ================= */
 async function apiRequest(path, options = {}) {
-  const res = await fetch(`${BASE_URL}${path}`, {
+  const res = await fetch(`${BASE_URL}/api/v1${path}`, {
     headers: {
       "Content-Type": "application/json",
     },
@@ -16,12 +15,14 @@ async function apiRequest(path, options = {}) {
     const error = new Error(data?.detail || "API request failed");
     error.status = res.status;
     error.data = data;
-    throw error; // 🔥 DO NOT CATCH HERE
+    throw error;
   }
 
   return data;
 }
 
+export const getNonce = (address) =>
+  apiRequest(`/auth/nonce/${address}`);
 
 /* ================= HEALTH ================= */
 export const getHealth = () => apiRequest("/health");

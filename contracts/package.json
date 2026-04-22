@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+<<<<<<< HEAD
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.2",
     "@nomicfoundation/hardhat-ethers": "^3.1.3",
     "@nomicfoundation/hardhat-ignition": "^0.15.16",
@@ -32,5 +33,10 @@
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
     "typescript": "^6.0.3"
+=======
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "dotenv": "^17.2.4",
+    "hardhat": "^2.19.0"
+>>>>>>> 0aa1fa1780f47a03e89486f816f970e446615975
   }
 }
