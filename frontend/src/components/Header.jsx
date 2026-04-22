@@ -1,7 +1,7 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-const API_BASE = "http://localhost:8000/api/v1";
+const API_BASE = "https://api.mevguard.quest/api/v1";
 
 export default function Header({
   title = "Suraksha Chain",

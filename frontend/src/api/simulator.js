@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000/api/v1";
+const BASE_URL = "https://api.mevguard.quest/api/v1";
 
 export async function getSimulatorStatus() {
   const res = await fetch(`${BASE_URL}/simulator/status`);

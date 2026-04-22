@@ -1,5 +1,5 @@
 const BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:8000";
+  import.meta.env.VITE_API_URL;
 /* ================= CORE FETCH WRAPPER ================= */
 async function apiRequest(path, options = {}) {
   const res = await fetch(`${BASE_URL}/api/v1${path}`, {

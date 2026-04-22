@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     MODEL_VERSION: str = "v1.0"
     
     # API
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000", "http://localhost:8000"]
+    ALLOWED_ORIGINS: List[str] = ["http://localhost:3000", "https://api.mevguard.quest"]
     
     # Model paths
     MODEL_PATH: str = "models/isolation_forest.pkl"

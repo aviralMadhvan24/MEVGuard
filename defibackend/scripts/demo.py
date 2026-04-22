@@ -8,7 +8,7 @@ import requests
 import json
 from datetime import datetime
 
-BASE_URL = "http://localhost:8000/api/v1"
+BASE_URL = "https://api.mevguard.quest/api/v1"
 
 def print_section(title: str):
     """Pretty print section headers"""
@@ -166,9 +166,9 @@ def main():
         print_section("✅ Demo Complete")
         print("All systems operational!")
         print("\nNext Steps:")
-        print("1. Open http://localhost:8000/docs for API documentation")
+        print("1. Open https://api.mevguard.quest/docs for API documentation")
         print("2. Try custom transactions via the API")
-        print("3. Check alerts at http://localhost:8000/api/v1/alerts")
+        print("3. Check alerts at https://api.mevguard.quest/api/v1/alerts")
         
     except requests.exceptions.ConnectionError:
         print("\n❌ Error: Cannot connect to backend")

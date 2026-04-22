@@ -79,9 +79,9 @@ cp .env.example .env
 python main.py
 ```
 
-Server runs at `http://localhost:8000`
+Server runs at `https://api.mevguard.quest`
 
-API Documentation: `http://localhost:8000/docs`
+API Documentation: `https://api.mevguard.quest/docs`
 
 ### 5. Run Demo
 
@@ -112,7 +112,7 @@ python scripts/demo.py
 ## 📊 Example Request
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/predict" \
+curl -X POST "https://api.mevguard.quest/api/v1/predict" \
   -H "Content-Type: application/json" \
   -d '{
     "amount_usd": 5000000,
@@ -172,7 +172,7 @@ High Risk → Database → Blockchain (async) → Notification
 
 Update threshold dynamically:
 ```bash
-curl -X POST "http://localhost:8000/api/v1/predict/threshold?new_threshold=0.75"
+curl -X POST "https://api.mevguard.quest/api/v1/predict/threshold?new_threshold=0.75"
 ```
 
 Or in `.env`:
@@ -227,7 +227,7 @@ PRIVATE_KEY=your-private-key
 python scripts/demo.py
 
 # Test specific endpoint
-curl http://localhost:8000/api/v1/health
+curl https://api.mevguard.quest/api/v1/health
 ```
 
 ## 📝 Judge-Ready Talking Points
