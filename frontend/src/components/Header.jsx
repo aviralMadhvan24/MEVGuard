@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const API_BASE = "https://api.mevguard.quest/api/v1";
 
 export default function Header({
-  title = "Suraksha Chain",
+  title = "MevGuard",
   onSettingsClick,
   onNotifClick,
 }) {
@@ -106,7 +106,7 @@ export default function Header({
         {/* Transactions */}
         <button
           onClick={() => navigate("/transactions")}
-          className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-colors ${
+          className={`cursor-pointer flex items-center gap-2 px-4 py-2 rounded-full border transition-colors ${
             isTransactionsActive
               ? "bg-primary/20 border-primary text-primary"
               : "bg-surface-dark border-[#283639] text-white hover:bg-[#283639]"
@@ -119,7 +119,7 @@ export default function Header({
         {/* Wallet Activity */}
         <button
           onClick={() => navigate("/wallet-activity")}
-          className="flex items-center gap-2 px-4 py-2 rounded-full border bg-surface-dark border-[#283639] text-white hover:bg-[#283639]"
+          className="cursor-pointer flex items-center gap-2 px-4 py-2 rounded-full border bg-surface-dark border-[#283639] text-white hover:bg-[#283639]"
         >
           <span className="material-symbols-outlined text-sm">
             account_balance_wallet
@@ -135,7 +135,7 @@ export default function Header({
 
           <span
             className={`text-xs font-bold ${
-              poolRunning ? "text-green-400" : "text-red-400"
+              poolRunning ? "cursor-pointer text-green-400" : "cursor-pointer text-red-400"
             }`}
           >
             {poolRunning ? "LIVE" : "STOPPED"}
@@ -145,7 +145,7 @@ export default function Header({
             <button
               onClick={startPool}
               disabled={loading}
-              className="text-xs px-2 py-1 rounded bg-green-600 hover:bg-green-500 text-white"
+              className=" cursor-pointer text-xs px-2 py-1 rounded bg-green-600 hover:bg-green-500 text-white"
             >
               Start
             </button>
@@ -153,7 +153,7 @@ export default function Header({
             <button
               onClick={stopPool}
               disabled={loading}
-              className="text-xs px-2 py-1 rounded bg-red-600 hover:bg-red-500 text-white"
+              className="cursor-pointer text-xs px-2 py-1 rounded bg-red-600 hover:bg-red-500 text-white"
             >
               Stop
             </button>
@@ -163,7 +163,7 @@ export default function Header({
           <button
             onClick={resetPool}
             disabled={loading}
-            className="text-xs px-2 py-1 rounded bg-yellow-600 hover:bg-yellow-500 text-black font-semibold"
+            className="cursor-pointer text-xs px-2 py-1 rounded bg-yellow-600 hover:bg-yellow-500 text-black font-semibold"
           >
             Reset
           </button>

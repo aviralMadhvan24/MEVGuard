@@ -42,11 +42,11 @@ export default function Login() {
 
         {/* Title */}
         <h1 className="text-3xl font-bold text-white text-center mb-2 tracking-tight">
-          DeFi Sentinel
+          MevGuard
         </h1>
 
         <p className="text-gray-400 text-center text-sm mb-10">
-          Secure DeFi threat detection powered by AI
+          Secure DeFi threat detection powered by ML
         </p>
 
         {/* Login Button */}
