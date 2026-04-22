@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environments
+.env
+.env.*
+
+# Databases
+*.db
+*.sqlite3
+
+# ML artifacts
+*.pkl
+*.joblib
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Env files
+.env
+.env.*
+
+# Databases
+*.db
+
+# ML artifacts
+*.pkl
+
+# --- allow ML model artifacts ---
+!defibackend/app/models/
+!defibackend/app/models/*.pkl
